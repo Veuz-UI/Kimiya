@@ -12,6 +12,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -44,7 +45,7 @@
         </div>
     </div>
     <!-------------------- Featured Services section -------------------->
-    <section>
+    <section data-aos="fade-up">
         <div class="container">
             <h2 class="heading text-center">Featured Services</h2>
             <div class="service-under-margin">
@@ -114,7 +115,7 @@
     <section>
         <div class="container-small">
             <div class="row d-flex align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right">
                     <h2 class="heading"><span>About Us</span><br>Kimiya International<br>
                         Soap Factory LLC</h2>
                     <p class="mt-4">Kimiya International is a Global manufacturing company established in the UAE,
@@ -122,14 +123,14 @@
                         distribution and much more services.</p>
                     <a href="#"><button class="button-green mt-4">Know More</button></a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6"data-aos="fade-left">
                     <img src="img/home-about.png" alt="" class="img-fluid home-about-img">
                 </div>
             </div>
         </div>
     </section>
     <!-------------------- Our Brand section -------------------->
-    <section class="brand-bg">
+    <section class="brand-bg" data-aos="fade-up" data-aos-delay="300">
         <div class="container">
 
             <h2 class="heading text-center">Our Brand</h2>
@@ -158,7 +159,7 @@
         </div>
     </section>
     <!-------------------- Our Products section -------------------->
-    <section>
+    <section data-aos="fade-up" data-aos-delay="100">
         <div class="container">
             <h2 class="heading text-center">Our Products</h2>
             <div class="service-under-margin">
@@ -192,12 +193,14 @@
                         <h3 class="product-text">Xtream Liquid Bleach</h3>
                     </div>
                 </div>
+
+                
             </div>
         </div>
     </section>
 
     <!-------------------- Main Features section -------------------->
-    <section class="brand-bg">
+    <section class="brand-bg" data-aos="fade-up">
         <div class="container-small">
             <h2 class="heading text-center">Our Products</h2>
             <h3 class="sub-text text-center">What we Offer</h3>
@@ -261,7 +264,7 @@
         </div>
     </section>
     <!-------------------- What Clients Say section -------------------->
-    <section class="testimonial-bg d-flex align-items-center">
+    <section class="testimonial-bg d-flex align-items-center"data-aos="fade-up">
         <div class="container-small">
             <div class="row">
                 <div class="col-lg-6">
@@ -290,7 +293,7 @@
             <h2 class="heading text-center">Latest Blog</h2>
             <div class="service-under-margin">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4"data-aos="fade-up">
                         <img src="img/blog/1.png" alt="" class="img-fluid blog-img">
                         <div class="blog-info d-flex flex-column">
                             <div class="d-flex align-items-center justify-content-center date-margin">
@@ -311,8 +314,8 @@
                             <a href="#"><button class="button-green margin-center mt-3">Read More</button></a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <img src="img/blog/2.png" alt="" class="img-fluid blog-img">
+                    <div class="col-lg-4"data-aos="fade-up">
+                        <img src="img/blog/2.png" alt="" class="img-fluid blog-img mobile-space-blog">
                         <div class="blog-info d-flex flex-column">
                             <div class="d-flex align-items-center justify-content-center date-margin">
                                 <div class="date-text">
@@ -332,8 +335,8 @@
                             <a href="#"><button class="button-green margin-center mt-3">Read More</button></a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <img src="img/blog/3.png" alt="" class="img-fluid blog-img">
+                    <div class="col-lg-4"data-aos="fade-up">
+                        <img src="img/blog/3.png" alt="" class="img-fluid blog-img mobile-space-blog">
                         <div class="blog-info d-flex flex-column">
                             <div class="d-flex align-items-center justify-content-center date-margin">
                                 <div class="date-text">
@@ -362,7 +365,7 @@
 <section>
     <div class="container-small">
         <div class="row d-flex align-items-end">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right">
                 <h2 class="heading">Get In Touch</h2>
                     <h3 class="sub-text mb-5">We are here for you? How can we help</h3>
                     <form action="">
@@ -372,7 +375,7 @@
                       <button type="submit" class="button-green w-100 margin-center">Submit</button>
                     </form>
             </div>
-            <div class="col-lg-6 contact-img">
+            <div class="col-lg-6 contact-img" data-aos="fade-left">
                 <img src="img/get-in-sec.png" alt="">
             </div>
         </div>
@@ -388,6 +391,11 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+  AOS.init({disable: 'mobile'});
+</script>
 
     <script>
         $('#banner-carousal').owlCarousel({
@@ -420,7 +428,7 @@
             autoplayHoverPause: false,
             responsive: {
                 0: {
-                    items: 1
+                    items: 2
                 },
                 600: {
                     items: 2

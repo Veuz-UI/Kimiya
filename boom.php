@@ -12,6 +12,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
         <!-------------------- navabr section -------------------->
@@ -20,7 +21,7 @@
          <div class="inner-banner-boom">
          </div>
              <!-------------------- Our Products section -------------------->
-    <section>
+    <section data-aos="fade-up">
         <div class="container">
             <h2 class="heading-products">Find your next favourite from Boom product</h2>
             <div class="service-under-margin">
@@ -61,10 +62,10 @@
     <section>
         <div class="container-small">
             <div class="row d-flex align-items-center gx-3">
-                <div class="col-lg-6">
-                    <img src="img/boom1.jpg" alt="" class="img-fluid home-about-img2">
+                <div class="col-lg-6"data-aos="fade-right">
+                    <img src="img/boom1.jpg" alt="" class="img-fluid home-about-img2 space-remove">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6"data-aos="fade-left">
                     <h2 class="heading"><span>Boom</span><br>Dishwash Liquid</h2>
                     <h3 class="sub-text">And we love it</h3>
                     <p class="mt-4">Kimiya International is a Global manufacturing company established in the UAE, offers a diverse range of personal care, house hold, laundry and auto care products its distribution and much more services.</p>
@@ -77,13 +78,13 @@
                  <section>
         <div class="container-small">
             <div class="row d-flex align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-2 order-md-1"data-aos="fade-right">
                     <h2 class="heading"><span>Bawn</span><br>Floor Cleaner</h2>
                     <h3 class="sub-text">And we love it</h3>
                     <p class="mt-4">Kimiya International is a Global manufacturing company established in the UAE, offers a diverse range of personal care, house hold, laundry and auto care products its distribution and much more services.</p>
                 </div>
-                <div class="col-lg-6">
-                    <img src="img/bawn2.jpg" alt="" class="img-fluid home-about-img">
+                <div class="col-lg-6 order-1 order-md-2"data-aos="fade-left">
+                    <img src="img/bawn2.jpg" alt="" class="img-fluid home-about-img space-remove2">
                 </div>
             </div>
         </div>
@@ -92,6 +93,10 @@
 
             <!-------------------- footer -------------------->
     <?php include 'footer.php';?>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
 <script src="js/jaquery.js"></script>
 <script src="https://kit.fontawesome.com/49ccdaea81.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

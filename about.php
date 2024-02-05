@@ -12,6 +12,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
         <!-------------------- navabr section -------------------->
@@ -26,14 +27,14 @@
     <section>
         <div class="container-small">
             <div class="row d-flex align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6"data-aos="fade-right">
                     <h2 class="heading"><span>About Us</span><br>Kimiya International<br>
                         Soap Factory LLC</h2>
                     <p class="mt-4">Kimiya International is a Global manufacturing company established in the UAE, offers a diverse range of personal care, house hold, laundry and auto care products its distribution and much more services.</p>
                     <p>We practice fine methods of processing that are capable of keeping the international standards.We drive our operations via higher facilities and appropriate technologies which will emphasize the quality products and service.</p>
                     <p>Our expert professionals, they research on medicinal qualities of different natural ingredients and make the products with creativity and innovation.</p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6"data-aos="fade-left">
                     <img src="img/about-page/about-section.jpg" alt="" class="img-fluid home-about-img">
                 </div>
             </div>
@@ -41,7 +42,7 @@
     </section>
 
         <!-------------------- What Clients Say section -------------------->
-        <section class="mission-bg d-flex align-items-center">
+        <section class="mission-bg d-flex align-items-center" data-aos="fade-up">
             <div class="container-small">
                 <div class="row d-flex justify-content-end">
                     <div class="col-lg-6">
@@ -62,7 +63,7 @@
 <section>
     <div class="container-small">
         <div class="row d-flex align-items-end">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right">
                 <h2 class="heading">Get In Touch</h2>
                     <h3 class="sub-text mb-5">We are here for you? How can we help</h3>
                     <form action="">
@@ -72,7 +73,7 @@
                       <button type="submit" class="button-green w-100 margin-center">Submit</button>
                     </form>
             </div>
-            <div class="col-lg-6 contact-img">
+            <div class="col-lg-6 contact-img" data-aos="fade-left">
                 <img src="img/get-in-sec.png" alt="">
             </div>
         </div>
@@ -81,6 +82,10 @@
 </section>
             <!-------------------- footer -------------------->
     <?php include 'footer.php';?>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
 <script src="js/jaquery.js"></script>
 <script src="https://kit.fontawesome.com/49ccdaea81.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

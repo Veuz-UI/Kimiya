@@ -15,7 +15,7 @@
             </div>
             <div class="col-lg-4 footerlink">
                 <h3>Information</h3>
-                <div class="d-flex">
+                <div class="d-flex flex-column flex-md-row">
                 <ul class="quiklinks">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
